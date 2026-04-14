@@ -14,22 +14,24 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- Source: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>4.0.1</version>
-    <scope>provided</scope>
-</dependency>
+    
+    <!-- Servlet API for Java EE -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
   </dependencies>
   <build>
-   <plugins>
+  <plugins>
   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-war-plugin</artifactId>
     <version>3.4.0</version> <!-- Update to latest stable version -->
-  </plugin>
+</plugin>
 </plugins>
-    <finalName>MymavenWebApp</finalName>
+    <finalName>MymavenWebApp</finalName> <!-- create a web page with the name MymavenWebapp01, if we want some other name we can chage it -->
   </build>
 </project>
+
